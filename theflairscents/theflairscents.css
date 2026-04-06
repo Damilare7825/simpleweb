@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lucida Sans";
+}
+a{
+    text-decoration: none;
+}
+.image{
+    width: 30px;
+    height: 50px;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    z-index: 1000000;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ /* css for the bars */
+.nav .navbar{
+    border: none;
+    display: none;
+    outline: none;
+}
+
+/* css for the bar icons*/
+
+.nav .navbar .icon{
+    width: 27px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    display: block;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+/* menubar items */
+
+.nav .menu-bar .menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav .menu-bar .menu-items li{
+    margin: 15px;
+}
+.nav .menu-bar .menu-items li a{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav .menu-bar .menu-items li a:hover{
+    color: darkorchid
+}
+
+/* css for navbar socials*/
+
+.nav .navbar-social{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.nav .navbar-social ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+.nav .navbar-social span{
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: black
+}
+.nav .navbar-social ul li a{
+    color: black;
+    font-size: 18px;
+}
+.nav .navbar-social ul li{
+    margin: 7px;
+}
+/* BACKGROUND IMAGE*/
+.back{
+    background-image: url(images/istockphoto-973900748-612x612.jpg);
+    width: 100%;
+    height: 120vh; 
+    position: relative;
+    background-attachment: fixed;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+ .bold{
+    font-weight: 900; 
+    font-style: italic;
+    margin-top: 200px;
+ }
+ .easy{
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 25px;
+ }
+ .main-button{
+    background-image: linear-gradient(to right, #535cf1, #A147E4);
+    color: white;
+    border: none;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: Arial;
+    cursor: pointer;
+ }
+ .button{
+    background-color: white;
+    border: none;
+     padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    color: purple;
+    border-radius: 13px;
+    font-weight: bold;
+
+ }
+ .main-button:hover{
+    background-image: linear-gradient(to left, #535cf1, #A147E4);
+ }
+ .button:hover{
+    background-color: purple;
+    color: white;
+    box-shadow: 0 3px 25px 0 rgba(0,0,0,0.16);
+ }
